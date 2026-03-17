@@ -70,7 +70,7 @@ st.caption(
 
 tokenizer = load_tokenizer()
 
-text_input = st.text_area("Input text", value="bajo bajando bajó", height=80)
+text_input = st.text_area("Input text", value="Enter text to tokenize", height=80)
 
 if st.button("Tokenize"):
     words = tokenizer._pretokenize(tokenizer._clean_text(text_input))
